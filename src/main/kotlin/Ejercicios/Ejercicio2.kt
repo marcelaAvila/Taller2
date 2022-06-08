@@ -27,6 +27,6 @@ Cantidad de buses --> Double --> bus
  */
 fun bus(gordos:Double, flacos:Double, silla:Double):Int{
     require(silla>0 && gordos>=0 && flacos>=0)
-    var bus = Math.ceil(((gordos*2+flacos)/silla).toDouble()).toInt()
+    var bus = Math.ceil(((gordos*2+flacos)/silla)).toInt()
     return bus
 }
